@@ -1,7 +1,7 @@
 /*
 Fibonacci Number Finder by Brandon Dols
 
-Notes: Could be improved by adding an array that stores previous numbers
+Notes: Finds Fibonacci numbers and stores them in an array to speed future function calls
 */
 
 // import readline module and create interface
@@ -10,8 +10,9 @@ const readline = require('readline').createInterface({
     output: process.stdout
     })
     
-// array for previously found fibonacci numbers
+// array for storing previously found fibonacci numbers
 foundFibNums = [0,1,1]
+
 // recursive function to find given fibonacci number
 function findFibonacci(num) {
 
